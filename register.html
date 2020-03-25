@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+  Blank High School Homepage
+</title>
+<link rel="stylesheet" href="CSS.css"> 
+<meta charset="UTF-8">
+<meta name="description" content="Blank High School Homepage">
+<meta name="keywords" content="Blank,High School,Homepage,School">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color:#F1F1F1">
+  
+<div class="header-img"></div>
+<header>
+  <div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="contact.html">Contact Us</a></li>                     <!--FEEL FREE TO CHANGE THESE PAGES TO SOMETHING YOU'D LIKE TO DO INSTEAD, THESE ARE PLACEHOLDERS-->
+      <li style="float:right"><a href="register.html" class="active">Login / Register</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="row">
+  <div class="leftcolumn">
+    <form action="register.php" method="POST">
+      <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="firstName"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="firstName" required>
+
+        <label for="lastName"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lastName" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <hr>
+
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+  
+      <div class="container signin">
+        <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
+      </div>
+    </form>
+  </div>
+  <div class="rightcolumn">
+    <div class="effect">
+      <h2>Follow us!</h2>
+      <a href="https://www.facebook.com/"><img src="https://i.imgur.com/6224DYi.png" alt="Facebook" height="75px" width="75px"></a>
+      <span><a href="https://www.twitter.com/"><img src="https://i.imgur.com/gWvXoFT.png" alt="Twitter" height="75px" width="75px" style="margin-left: 25px;"></a></span>
+      <span><a href="https://www.youtube.com/"><img src="https://i.imgur.com/e1yDCxE.png" alt="Youtube" height="75px" width="75px" style="margin-left: 25px;"></a></span>
+      <span><a href="https://www.instagram.com/"><img src="https://i.imgur.com/djZT9iE.png" alt="Youtube" height="75px" width="75px" style="margin-left: 25px;"></a></span>
+    </div>
+    <div class="effect">
+      <h3>Important Links</h3>
+      <a href="https://ncreportcards.ondemand.sas.com/src"><img src="https://i.imgur.com/4EEmHGD.png" height="75px" width="280px" class="center"></a><br>
+      <a href="http://peachjar.com/"><img src="https://i.imgur.com/RutNxfi.png" height="100px" width="280px" class="center"></a><br>
+      <a href="https://www.powerschool.com/"><img src="https://i.imgur.com/ACcNQuP.png" height="70px" width="280px" class="center"></a>
+      
+    </div>
+    <div class="effect">
+      <h3>Upcoming Events</h3>
+      <p><b>November 27th</b></p>
+      <p>8:00 AM - 9:00 AM</p>
+      <p>Varsity Girls Basketball- Mary Garber Tournament</p>
+      <p><b>December 2nd</b></p>
+      <p>4:00 PM - 6:00 PM</p>
+      <p>Driver's Ed</p>
+      <p><b>December 3rd</b></p>
+      <p>4:00 PM - 6:00 PM</p>
+      <p>Driver's Ed</p>
+      <p>4:15 PM - 5:00 PM</p>
+      <p>Freshmen Boys Basketball vs. Central Davidson</p>
+      <p>5:00 PM - 6:00 PM</p>
+      <p>JV Girls Basketball Away @ Central Davidson</p>
+      <p>6:00 PM - 7:00 PM</p>
+      <p>Varsity Girls Basketball vs Central Davidson</p>
+      <p>6:30 PM - 7:00 PM</p>
+      <p>JV Boys Basketball Away @ West Forsyth</p>
+      <p>7:30 PM - 8:00 PM</p>
+      <p>Varsity Boys Basketball vs. West Forsyth</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="margin-left: 200px">Blank High School</h2>
+  <h3 style="border: 1px solid #aaa; float: right; margin-right: 250px; background-color: #aaa; padding: 15px">Principal: John Doe</h3>
+  <h4 style="margin-left: 200px">777 Roadname Road Winston-Salem, NC 27106</h4>
+  <h4 style="margin-left: 200px">Phone: (777) 777-7777 | Fax: (888) 888-8888</h4>
+  <h4 style="margin-left: 200px">Hours: 8:55 a.m. - 3:40 p.m.</h4>
+</div>
+
+</body>
+</html>
